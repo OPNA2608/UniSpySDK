@@ -691,28 +691,28 @@ int test_main(int argc, char **argv)
 		return 1;
 	}
 
-	// connect to the chat server
-	_tprintf(_T("Connecting as %s..."), nick);
-	peerConnect(peer, nick, profileID, NickErrorCallback, ConnectCallback, userData, blocking);
-	if(!connectSuccess)
-	{
-		peerShutdown(peer);
-		_tprintf(_T("Failed to connect\n"));
-		return 1;
-	}
-	printf("Connected\n\n");
+	// //connect to the chat server
+	//_tprintf(_T("Connecting as %s..."), nick);
+	//peerConnect(peer, nick, profileID, NickErrorCallback, ConnectCallback, userData, blocking);
+	//if(!connectSuccess)
+	//{
+	//	peerShutdown(peer);
+	//	_tprintf(_T("Failed to connect\n"));
+	//	return 1;
+	//}
+	//printf("Connected\n\n");
 
-	// join the title room
-	printf("Joining title room...");
-	peerJoinTitleRoom(peer, NULL, JoinCallback, NULL, PEERTrue);
-	if(!joinSuccess)
-	{
-		peerDisconnect(peer);
-		peerShutdown(peer);
-		_tprintf(_T("Failed to join the title room\n"));
-		return 1;
-	}
-	printf("Joined\n\n");
+	//// join the title room
+	//printf("Joining title room...");
+	//peerJoinTitleRoom(peer, NULL, JoinCallback, NULL, PEERTrue);
+	//if(!joinSuccess)
+	//{
+	//	peerDisconnect(peer);
+	//	peerShutdown(peer);
+	//	_tprintf(_T("Failed to join the title room\n"));
+	//	return 1;
+	//}
+	//printf("Joined\n\n");
 
 	// list the group rooms
 	printf("Listing group rooms:\n");

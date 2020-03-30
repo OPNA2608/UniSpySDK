@@ -26,9 +26,9 @@ CGp_statsDlg::CGp_statsDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CGp_statsDlg::IDD, pParent)
 {
 	//{{AFX_DATA_INIT(CGp_statsDlg)
-	m_email = _T("dan@gamespy.com");
-	m_nick = _T("mrpants");
-	m_password = _T("mrpants");
+	m_email = _T("spyguy@gamespy.com");
+	m_nick = _T("spyguy");
+	m_password = _T("0000");
 	m_profileID = 0;
 	m_type = 0;
 	m_value = _T("");

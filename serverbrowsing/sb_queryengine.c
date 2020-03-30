@@ -684,7 +684,7 @@ void SBQueryEngineThink(SBQueryEngine *engine)
 		return;
 	ProcessIncomingReplies(engine, SBFalse);
 #ifdef SB_ICMP_SUPPORT
-	ProcessIncomingReplies(engine, SBTrue);
+	//ProcessIncomingReplies(engine, SBTrue);
 #endif
 	TimeoutOldQueries(engine);
 	if (engine->pendinglist.count > 0)
